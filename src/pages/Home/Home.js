@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Home/Home.scss'
+import Footer from '../../components/Footer'
 
 function Home() {
 
@@ -41,6 +42,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
