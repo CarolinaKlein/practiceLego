@@ -5,6 +5,7 @@ import Minecraft from '../assets/minecraft.png'
 import Thumbnail from '../assets/thumbnail.png'
 import { useHistory } from 'react-router-dom';
 
+
 function VideoList(){
 
     let videoList = [
@@ -30,12 +31,12 @@ function VideoList(){
             sample: "https://www.youtube.com/watch?v=c_dG_HxHMVI"
         }
     ]
-    console.log(videoList[0].available)
 
     const history = useHistory()
 
     let handleThumbnailClick = () => {
-        history.push('/video')
+        history.push('/videoID')
+        
     }
 
     return(

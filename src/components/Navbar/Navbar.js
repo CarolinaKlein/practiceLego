@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.scss'
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 function Navbar(){
 

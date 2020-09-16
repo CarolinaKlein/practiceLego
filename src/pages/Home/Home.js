@@ -1,7 +1,5 @@
 import React from 'react';
 import '../Home/Home.scss';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import VideoList from '../../components/VideoList'
 
 function Home() {
@@ -9,7 +7,6 @@ function Home() {
     return (
       
         <div className="nick-home">
-            <Navbar/>
             <div className="columns is-centered">
                 <div className="column is-half has-text-centered">
                     <h1 className="nick-home-title">
@@ -29,7 +26,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

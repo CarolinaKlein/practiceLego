@@ -1,22 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/Home'
-import Video from './pages/Video/ Video'
+import FeaturedVideo from './pages/Video/FeaturedVideo'
 import './App.scss';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <Router>
       <Navbar/>
       <Switch>
-          <Route path="/video">
-            <Video/>
+          <Route path="/videoID">
+            <FeaturedVideo/>
           </Route>
           <Route exact path="/">
               <Home />
           </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
