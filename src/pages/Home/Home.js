@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Home/Home.scss';
-import VideoList from '../../components/VideoList'
+import VideoList from '../../components/VideoList/VideoList'
 
 function Home() {
     

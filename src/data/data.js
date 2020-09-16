@@ -1,24 +1,29 @@
+import Batman from '../assets/batman.png';
+import City from '../assets/city.png';
+import Minecraft from '../assets/minecraft.png'
+import Thumbnail from '../assets/thumbnail.png'
+
 const data = [
     {   
-        "id": 1,
-        "firstLogo": "City",
-        "thumbnail": "../assets/thumbnail.png",
+        "id": "1",
+        "firstLogo": City,
+        "thumbnail": Thumbnail,
         "available": "Watch Video",
-        "sample": "<iframe width='560' height='315' src='https://www.youtube.com/embed/jXZAbnn1kTU' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+        "sample": "https://www.youtube.com/embed/jXZAbnn1kTU" 
     },
     {   
-        "id": 2,
-        "firstLogo": "Minecraft",
-        "thumbnail": "../assets/thumbnail.png", 
+        "id": "2",
+        "firstLogo": Minecraft,
+        "thumbnail": Thumbnail,
         "available": "Unlock 12/6",
-        "sample": "https://www.youtube.com/watch?v=c_dG_HxHMVI"
+        "sample": "https://www.youtube.com/embed/jXZAbnn1kTU" 
     },
     {
-        "id": 3,
-        "firstLogo": "Batman",
-        "thumbnail": "../assets/thumbnail.png", 
+        "id": "3",
+        "firstLogo": Batman,
+        "thumbnail": Thumbnail,
         "available": "Unlock 12/13",
-        "sample": "https://www.youtube.com/watch?v=c_dG_HxHMVI"
+        "sample": "https://www.youtube.com/embed/jXZAbnn1kTU" 
     }
 ]
 
