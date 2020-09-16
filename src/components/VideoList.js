@@ -34,9 +34,8 @@ function VideoList(){
 
     const history = useHistory()
 
-    let handleThumbnailClick = () => {
-        history.push('/videoID')
-        
+    let handleThumbnailClick = (id) => {
+        history.push(`/${id}`)
     }
 
     return(
@@ -52,7 +51,7 @@ function VideoList(){
                                         <div>
                                             <img src={video.thumbnail}></img>
                                         </div>
-                                        <button onClick={handleThumbnailClick}>{video.available}</button>
+                                        <button onClick={() => handleThumbnailClick(video.id)}>{video.available}</button>
                                     </div>
                           </div>
                         )
