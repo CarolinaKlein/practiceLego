@@ -7,6 +7,7 @@ function HotspotPath({hotspot, totalHotspots}){
         let hotspotItineration = []
 
         for (let i=0; i <= totalHotspots -1; i ++){
+            
             // the logic that I am missing
         }
         return hotspotItineration
@@ -20,3 +21,6 @@ function HotspotPath({hotspot, totalHotspots}){
 }
 
 export default HotspotPath;
+
+// This will be imported into the Featured Video page like so:
+// <HotspotPath hotspot={currentHotspote} totalHotspot={hotspotList.length} />
