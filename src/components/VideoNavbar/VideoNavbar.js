@@ -23,7 +23,7 @@ function VideoNavbar(){
             <div>
                 { data
                 .filter((item) => item.id !== videoID)
-                .map((item) => <img src={item.firstLogo} key={item.id} onClick={() => handleClick(item.id)} /> )
+                .map((item) => <img className={item.className} src={item.firstLogo} key={item.id} onClick={() => handleClick(item.id)} /> )
                 }
             </div>
         </div>
@@ -38,3 +38,6 @@ export default VideoNavbar;
 
 // the reason why we have assigned an ".id" to "item" for the key on the map function, is because keys are objects, 
 //and objects don't make good keys
+
+// on the map function, we are using syntaxis sugar by removing "item", and putting "className, firstLogo, and id" between curlies
+// more info on:  https://javascript.info/destructuring-assignment#object-destructuring

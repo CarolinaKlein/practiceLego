@@ -6,6 +6,7 @@ import Thumbnail from '../assets/thumbnail.png'
 const data = [
     {   
         "id": "1",
+        "className" : "city",
         "firstLogo": City,
         "thumbnail": Thumbnail,
         "available": "Watch Video",
@@ -13,6 +14,7 @@ const data = [
     },
     {   
         "id": "2",
+        "className" : "minecraft",
         "firstLogo": Minecraft,
         "thumbnail": Thumbnail,
         "available": "Unlock 12/6",
@@ -20,6 +22,7 @@ const data = [
     },
     {
         "id": "3",
+        "className" : "batman",
         "firstLogo": Batman,
         "thumbnail": Thumbnail,
         "available": "Unlock 12/13",

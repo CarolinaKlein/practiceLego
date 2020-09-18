@@ -9,8 +9,6 @@ const FeaturedVideo = () => {
     const { videoID } = useParams();
 
     const individualVideo = videos.find((video) => video.id === videoID)
-    
-    console.log(individualVideo)
 
     return(
         <>
