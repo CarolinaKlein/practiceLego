@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
-import videos from '../../data/data'
+import videos from '../../data/data' 
+import './VideoList.scss'
 
 function VideoList(){
 
@@ -18,19 +19,19 @@ function VideoList(){
                     {videos.map((video) => {
                         return (
                             <div className="column is-flex is-one-quarter has-text-centered" key={video}>
-                                <div className="nick-home-cards">
+                                <div className="nick-home-cards" >
+                                    <div className={video.className}>
                                         <div>
                                             <img src={video.firstLogo}/>
                                             <img src={video.secondLogo}/>
                                         </div>
-                                        <div>
-                                            <img src={video.thumbnail}></img>
-                                        </div>
-                                        <button onClick={() => handleThumbnailClick(video.id)}>{video.available}</button>
+                                   
+                                        <button className="nick-home-cta" onClick={() => handleThumbnailClick(video.id)}>{video.available}</button>
                                         {/* before, the onClick function only had one thing in between the brackets, 
                                         and that was the "handleThumbnailClick. But this click is a function, so we needed
                                         to add the anonymous function, and we also needed to pass the mapped element " */}
                                     </div>
+                                </div>
                           </div>
                         )
                     })}   

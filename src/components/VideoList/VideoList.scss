@@ -1,0 +1,26 @@
+.batman{
+    background-image: url(../../assets/batman-thumbnail.png);
+    height: 25rem;
+    position: relative;
+}
+
+.minecraft{
+    background-image: url(../../assets/minecraft-thumbnail.png);
+    height: 25rem;
+    position: relative;
+}
+
+.city{
+    background-image: url(../../assets/city-thumbnail.png);
+    background-size: cover;
+    height: 25rem;
+    position: relative;
+}
+
+.nick-home-cta{
+    position: absolute;
+    bottom: -3%;
+    left: 24%;
+    height: 3rem;
+    width: 12rem;
+}

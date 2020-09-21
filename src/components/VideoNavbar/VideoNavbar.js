@@ -10,7 +10,7 @@ function VideoNavbar(){
 
     const history = useHistory()
 
-    let handleClick = (id) => {
+    let handleNavLogoClick = (id) => {
         history.push(`/${id}`)
     }
     
@@ -23,7 +23,7 @@ function VideoNavbar(){
             <div>
                 { data
                 .filter((item) => item.id !== videoID)
-                .map((item) => <img className={item.className} src={item.firstLogo} key={item.id} onClick={() => handleClick(item.id)} /> )
+                .map((item) => <img className={item.className} src={item.firstLogo} key={item.id} onClick={() => handleNavLogoClick(item.id)} /> )
                 }
             </div>
         </div>

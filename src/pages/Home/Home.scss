@@ -6,7 +6,24 @@
     background-color: #E0DBD6;
 }
 .nick-home-outro{
-    background-color: #E0DBD6;
+    position: relative;
+    .left-screw{
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        top: 1rem;
+        left: 1rem;
+    }
+    .right-screw{
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        top: 1rem;
+        right: 1rem;
+    }
+    background-color: #01539C;
+    color: white;
+    border: 3px solid black;
 }
 .nick-home-title{
     font-weight: bolder;
