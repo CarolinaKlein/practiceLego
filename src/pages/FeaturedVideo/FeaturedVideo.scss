@@ -1,0 +1,13 @@
+.video-theater-view{
+    width: 640px;
+    height: 360px;
+    position: relative;
+    .parent-superposition{
+        position: absolute;
+        background-color: rgb(222, 135, 135);
+        opacity: 0.8;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

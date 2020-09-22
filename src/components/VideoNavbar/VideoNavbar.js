@@ -10,6 +10,8 @@ function VideoNavbar(){
 
     const history = useHistory()
 
+    const eventHandler = () => history.push("/")
+
     let handleNavLogoClick = (id) => {
         history.push(`/${id}`)
     }
@@ -18,7 +20,7 @@ function VideoNavbar(){
         
         <div>
             <div>
-                <img src={Logo}/>
+                <img onClick={eventHandler} src={Logo}/>
             </div>
             <div>
                 { data

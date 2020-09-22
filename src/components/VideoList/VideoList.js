@@ -22,7 +22,7 @@ function VideoList(){
                                 <div className="nick-home-cards" >
                                     <div className={video.className}>
                                         <div>
-                                            <img src={video.firstLogo}/>
+                                            <img src={video.firstLogo} className="card-top-logo"/>
                                             <img src={video.secondLogo}/>
                                         </div>
                                    
