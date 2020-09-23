@@ -1,10 +1,12 @@
+import secondVideo from '../assets/video2.mp4'
+
 const hotspotListBatman = 
     {
         hotspotOne : {
             options : [
                 {
                  name : "optionOne",
-                 destination: "", 
+                 destination: secondVideo, 
                  hotspotTwo : {
                     options : [{
 
@@ -13,11 +15,11 @@ const hotspotListBatman =
                 },
                 {
                 name : "option2",
-                destination: "", 
+                destination: secondVideo, 
                 },
                 {
                 name : "option3",
-                destination: "", 
+                destination: secondVideo, 
                 }
                 ]
         }

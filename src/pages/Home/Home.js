@@ -29,15 +29,16 @@ function Home() {
             </div>
             <VideoList />
 
-            <div className="nick-home-outro">
-                <div className="nick-home-screws">
-                    <img src={Screw} className="left-screw"/>
-                    <img src={Screw} className="right-screw"/>
-                </div>
-                <div className="outro-body">
+            <div className="columns is-centered nick-home-outro-container">
+               <div className="column has-text-centered nick-home-outro-component">
+                    <div className="nick-home-screws">
+                        <img src={Screw} className="left-screw"/>
+                        <img src={Screw} className="right-screw"/>
+                    </div>
+                    <div className="outro-body">
                     <div className="columns">
                         <div className="column">
-                            <div className="nick-home-outro-logo">
+                            <div className="nick-home-outro-logo has-text-centered">
                                 <img src={Logo} className="outro-logo"/>
                             </div>
                         </div>
@@ -60,6 +61,7 @@ function Home() {
                             <img src={Logo} className="outro-icon"/>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

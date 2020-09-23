@@ -6,44 +6,48 @@
         color: white;
         border: 3px solid black;
     }
-
-    .nick-home-outro{
-        position: relative;
-        background-color: #01539C;
-        color: white;
-        border: 3px solid black;
-
-        .left-screw{
-            position: absolute;
-            height: 2rem;
-            width: 2rem;
-            top: 1rem;
-            left: 1rem;
-        }
-        .right-screw{
-            position: absolute;
-            height: 2rem;
-            width: 2rem;
-            top: 1rem;
-            right: 1rem;
-        }
-      
-        .outro-logo{
-            height: 3rem;
-            border-radius: 10%;
-        }
-        .appstore-links{
-            a{
-                padding: 0.5rem;
+    .nick-home-outro-container{
+        .nick-home-outro-component{
+            position: relative;
+            background-color: #01539C;
+            color: white;
+            border: 3px solid black;
+            max-width: 60%;
+            
+    
+            .left-screw{
+                position: absolute;
+                height: 2rem;
+                width: 2rem;
+                top: 1rem;
+                left: 1rem;
             }
-            img{
-                height: 2.8rem;
-                width: auto;
+            .right-screw{
+                position: absolute;
+                height: 2rem;
+                width: 2rem;
+                top: 1rem;
+                right: 1rem;
             }
-        }
-        .outro-icon{
-            height: 3rem;
+          
+            .outro-logo{
+                height: 3rem;
+                border-radius: 10%;
+            }
+            .appstore-links{
+                a{
+                    padding: 0.5rem;
+                }
+                img{
+                    height: 2.8rem;
+                    width: auto;
+                }
+            }
+            .outro-icon{
+                height: 3rem;
+            }
         }
     }
+    
 }
 

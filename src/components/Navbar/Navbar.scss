@@ -1,5 +1,37 @@
-.nick-nav{
-    display: flex;
-    justify-content: center;
+.nick-navbar{
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    img{
+        height: 3rem;
+    }
+  
+}
+
+.burger-line{
+    width: 12em;
+    height: 1.5em;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+    &::before,
+    &::after{
+        content: "";
+        width: 12em;
+        height: 1.5em;
+        background-color: red;
+        position: absolute;
+        display: block;
+    }
+    &::before{
+        top: -150%;
+        left: 0%;
+        background-color: blue;
+    }
+    &::after{
+        bottom: -250%;
+        left: 0%
+    }
+
 }
