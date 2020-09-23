@@ -1,37 +1,47 @@
-.nick-navbar{
+.nick-navbar-closed{
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    border: 2px solid black;
+    cursor: pointer;
     img{
         height: 3rem;
     }
-  
+    .burger-line{
+        margin-top: 2rem;
+        width: 2rem;
+        height: 0.2rem;
+        // background-color: #FFD700;
+        background-color: crimson;
+        position: absolute;
+        &::before,
+        &::after{
+            content: "";
+            width: 2rem;
+            height: 0.2rem;
+            // background-color: #FFD700;
+            background-color: crimson;
+            position: absolute;
+            display: block;
+        }
+        &::before{
+            top: -240%;
+            left: 0%;
+            // background-color: #FFD700;
+            background-color: crimson;
+        }
+        &::after{
+            bottom: -240%;
+            left: 0%
+        }
+    
+    }
 }
 
-.burger-line{
-    width: 12em;
-    height: 1.5em;
-    background-color: red;
-    position: absolute;
-    cursor: pointer;
-    &::before,
-    &::after{
-        content: "";
-        width: 12em;
-        height: 1.5em;
-        background-color: red;
-        position: absolute;
-        display: block;
+.nick-navbar-expanded{
+    background-color: black;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    img{
+        height: 3rem;
     }
-    &::before{
-        top: -150%;
-        left: 0%;
-        background-color: blue;
-    }
-    &::after{
-        bottom: -250%;
-        left: 0%
-    }
-
 }
