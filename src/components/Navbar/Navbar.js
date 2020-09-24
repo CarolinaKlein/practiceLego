@@ -8,6 +8,7 @@ import './Navbar.scss'
 function Navbar(){
 
     const [expanded, setExpanded] = useState(false)
+    
 
     const { videoID } = useParams();
 
@@ -26,25 +27,19 @@ function Navbar(){
     function closeBurgerMenu(){
         setExpanded(false)
     }
-    
+   
     return(
         <>
         {expanded === false ? (
 
-        <div>
-            <div className="nick-navbar-closed" onClick={expandBurgerMenu}>
-                <div className="burger-line"></div>
-            </div>
+        <div className="nick-navbar">
+            <div className="nick-closed-burger" onClick={expandBurgerMenu}></div>
         </div>
         
-        
         ) : (
-           
-            <div className="nick-navbar-expanded">
-                <div>
-                    <div className="nick-navbar-closed" onClick={closeBurgerMenu}>
-                        <div className="burger-line"></div>
-                </div>
+        <div>
+            <div className="nick-navbar">
+                <div className="nick-closed-burger" onClick={closeBurgerMenu}></div>
                 {/* <img onClick={eventHandler} src={Logo}/> */}
             </div>
             <div className="nick-menu-items">

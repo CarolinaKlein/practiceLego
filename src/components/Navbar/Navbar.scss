@@ -1,32 +1,32 @@
-.nick-navbar-closed{
+.nick-navbar{
+    width: 100vw;
+    height: 5rem;
     background-color: black;
-    border: 2px solid black;
     cursor: pointer;
-    img{
-        height: 3rem;
-    }
-    .burger-line{
+
+    .nick-closed-burger{
         margin-top: 2rem;
         width: 2rem;
         height: 0.2rem;
-        // background-color: #FFD700;
-        background-color: crimson;
+        background-color: #FFD700;
+        border-radius: 5%;
         position: absolute;
+        display: flex;
+        justify-content: flex-end;
         &::before,
         &::after{
             content: "";
             width: 2rem;
             height: 0.2rem;
-            // background-color: #FFD700;
-            background-color: crimson;
+            background-color: #FFD700;
+            border-radius: 5%;
             position: absolute;
             display: block;
         }
         &::before{
-            top: -240%;
+            top: -230%;
             left: 0%;
-            // background-color: #FFD700;
-            background-color: crimson;
+            background-color: #FFD700;
         }
         &::after{
             bottom: -240%;
@@ -36,12 +36,26 @@
     }
 }
 
-.nick-navbar-expanded{
-    background-color: black;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    img{
-        height: 3rem;
-    }
-}
+
+
+
+
+
+// .nick-navbar-closed{
+//     background-color: black;
+//     cursor: pointer;
+//     img{
+//         height: 3rem;
+//     }
+    
+// }
+
+// .nick-navbar-expanded{
+//     background-color: black;
+//     border: 2px solid black;
+//     display: flex;
+//     justify-content: space-between;
+//     img{
+//         height: 3rem;
+//     }
+// }
