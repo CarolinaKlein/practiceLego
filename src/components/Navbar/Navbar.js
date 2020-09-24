@@ -2,14 +2,12 @@ import React, { useState } from 'react';
 import {useParams} from 'react-router';
 import { useHistory } from 'react-router-dom';
 import data from '../../data/data'
-import Logo from '../../assets/logo.png'
 import './Navbar.scss'
 
 function Navbar(){
 
     const [expanded, setExpanded] = useState(false)
     
-
     const { videoID } = useParams();
 
     const history = useHistory()
@@ -33,16 +31,18 @@ function Navbar(){
         {expanded === false ? (
 
         <div className="nick-navbar">
-            <div className="nick-closed-burger" onClick={expandBurgerMenu}></div>
+            <div className="nick-burger-container-closed" onClick={expandBurgerMenu}>
+                <div className="nick-closed-burger"></div>
+            </div>
         </div>
         
         ) : (
-        <div>
-            <div className="nick-navbar">
-                <div className="nick-closed-burger" onClick={closeBurgerMenu}></div>
-                {/* <img onClick={eventHandler} src={Logo}/> */}
+        <div className="nick-navbar">
+            <div className="nick-burger-container-expanded" onClick={closeBurgerMenu}>
+                <div className="nick-expanded-burger"></div>
             </div>
             <div className="nick-menu-items">
+                <div onClick={eventHandler} className="nick-route-home">Home</div>
                 { data
                 .filter((item) => item.id !== videoID)
                 .map((item) => <img className={item.className} src={item.firstLogo} key={item.id} onClick={() => handleNavLogoClick(item.id)} /> )
