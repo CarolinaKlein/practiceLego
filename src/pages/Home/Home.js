@@ -13,11 +13,6 @@ function Home() {
       
         <div className="nick-home">
             <div className="columns is-centered">
-                <div className="column is-half has-text-centered">
-                    {/* <img src={Logo} />  */}
-                </div>
-            </div>
-            <div className="columns is-centered">
                 <div className="column is-half has-text-centered nick-home-intro">
                     <h1 className="nick-home-title is-size-4 has-text-weight-bold">
                       Aptentaciti sociosqu!

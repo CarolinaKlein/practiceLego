@@ -31,22 +31,27 @@ function Navbar(){
         {expanded === false ? (
 
         <div className="nick-navbar">
-            <div className="nick-burger-container-closed" onClick={expandBurgerMenu}>
-                <div className="nick-closed-burger"></div>
+            <div className="nick-menu" onClick={expandBurgerMenu}>
+                <div className="nick-menu-burger"></div>
             </div>
         </div>
         
         ) : (
         <div className="nick-navbar">
-            <div className="nick-burger-container-expanded" onClick={closeBurgerMenu}>
-                <div className="nick-expanded-burger"></div>
+            <div className="nick-menu" onClick={closeBurgerMenu}>
+                <div className="nick-menu-burger expanded"></div>
             </div>
-            <div className="nick-menu-items">
-                <div onClick={eventHandler} className="nick-route-home">Home</div>
-                { data
-                .filter((item) => item.id !== videoID)
-                .map((item) => <img className={item.className} src={item.firstLogo} key={item.id} onClick={() => handleNavLogoClick(item.id)} /> )
-                }
+            <div className="nick-menu-items-container">
+                <div className="nick-menu-items">
+                    <div onClick={eventHandler} className="nick-route-home">Home</div>
+                    { data
+                    .filter((item) => {
+                        console.log(item.id, videoID)
+                       return item.id !== videoID
+                    })
+                    .map((item) => <img className={item.className} src={item.firstLogo} key={item.id} onClick={() => handleNavLogoClick(item.id)} /> )
+                    }
+                </div>
             </div>
         </div>
        
